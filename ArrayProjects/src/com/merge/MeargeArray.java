@@ -44,7 +44,29 @@ public class MeargeArray {
 		return mar;
 		
 	}
-	public static void main(String[] args) {
+		static int[] meargeAlterSkip(int a1[],int a2[]) {
+			
+		
+		int len1=a1.length;
+		int len2=a2.length;
+		int maxIndex=Math.max(len1, len2);
+		int mar[]=new int[maxIndex];
+		int i=0,index=0;
+		
+		while(index<maxIndex) {
+			if(i<a1.length) {
+				mar[index++]=a1[i++];
+			}
+			if(i<a2.length) {
+				mar[index++]=a2[i++];
+			}
+		}
+		
+		return mar;
+		
+	}
+	
+		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr1[]={2,3,5,8};
 		int arr2[]= {10,20,30,40,50};
@@ -61,6 +83,12 @@ public class MeargeArray {
 		
 		System.out.println("After Alter mearge array");
 		System.out.println(Arrays.toString(m1));
+		
+		System.out.println("-----------------------------------");
+		int m2[]=meargeAlterSkip(arr1, arr2); 
+		
+		System.out.println("After alter mearge skip array");
+		System.out.println(Arrays.toString(m2));
 		
 
 
