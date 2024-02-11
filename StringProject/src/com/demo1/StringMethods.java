@@ -42,7 +42,7 @@ public class StringMethods {
 			
 			//trim
 			
-			String st=" j ava   ";
+			String st=" java  main  ";
 			System.out.println(st+st.length());
 			
 			st=st.trim();

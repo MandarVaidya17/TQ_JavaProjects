@@ -29,7 +29,7 @@ public class Frequency {
 				
 				//duplicate
 				if(count>1) {
-					//System.out.println("duplicate "+ar[i]);
+					System.out.println("duplicate "+ar[i]);
 				}
 				//unique
 				if(count==1) {
