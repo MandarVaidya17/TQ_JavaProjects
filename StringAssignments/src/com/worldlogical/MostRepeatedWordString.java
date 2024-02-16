@@ -1,6 +1,6 @@
-package com.wordslogical;
+package com.worldlogical;
 
-public class MostRepeatedWord {
+public class MostRepeatedWordString {
 	
 	static void repeatWord(String st) {
 		String s[]=st.split(" ");
@@ -15,7 +15,7 @@ public class MostRepeatedWord {
 	}
 	
 	public static void main(String[] args) {
-		String s="I am Smart aslo I am strong";
+		String s="I am Smart also I am strong also";
 		repeatWord(s);
 	}
 

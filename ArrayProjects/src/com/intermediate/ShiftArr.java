@@ -29,6 +29,7 @@ public class ShiftArr {
 
 	public static void main(String[] args) {
 		int arr[]= {2,5,9,6,4,8,0,3,1};
+		System.out.println(Arrays.toString(arr));
 		shiftArr(arr);
 		int ar[]= new int[10];
 		System.out.println(ar[0]);
