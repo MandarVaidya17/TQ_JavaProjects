@@ -4,10 +4,10 @@ public class CapacityDemo {
 
 	public static void main(String[] args) {
 		StringBuffer sb=new StringBuffer();
-		sb.append("Hello");
+		//sb.append("Hello");
 		System.out.println(sb.capacity());
 		
-		StringBuilder sb1=new StringBuilder("Hello");
+		StringBuilder sb1=new StringBuilder();
 		System.out.println(sb1.capacity());
 		
 		StringBuffer sb2=new StringBuffer(5);

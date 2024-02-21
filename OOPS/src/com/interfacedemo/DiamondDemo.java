@@ -34,7 +34,7 @@ public class DiamondDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Suzuki s1;
+		Maruti s1;
 		s1=new Swift();
 		s1.car();
 		s1.model();
