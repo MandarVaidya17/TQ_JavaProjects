@@ -1,6 +1,7 @@
 package com.ArrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo4 {
 	public static void main(String[] args) {
@@ -19,6 +20,8 @@ public class ArrayListDemo4 {
 		str2.add(1,"Sid");
 		
 		System.out.println(str.equals(str2));
+		
+		
 		
 	}
 

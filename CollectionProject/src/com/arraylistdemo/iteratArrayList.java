@@ -28,6 +28,7 @@ public class iteratArrayList {
 		Iterator<String> itr=al.iterator();
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
+			
 		}
 		System.out.println("-------------------");
 

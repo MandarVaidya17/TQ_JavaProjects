@@ -1,18 +1,19 @@
-package com.ArrayList;
+package com.queuedemo;
 
-public class Employee implements Cloneable {
+public class Boook {
+
 	private int id;
 	private String name;
-	private double salary;
-	public Employee() {
+	private double price;
+	public Boook() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(int id, String name, double salary) {
+	public Boook(int id, String name, double price) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.salary = salary;
+		this.price = price;
 	}
 	public int getId() {
 		return id;
@@ -26,15 +27,15 @@ public class Employee implements Cloneable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getSalary() {
-		return salary;
+	public double getPrice() {
+		return price;
 	}
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+		return "Boook [id=" + id + ", name=" + name + ", price=" + price + "]";
 	}
 	
 	

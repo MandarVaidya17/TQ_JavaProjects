@@ -26,6 +26,8 @@ public class EmployeeArrayList {
 		emp.add(new Employee(102,"Pradnya",45000));
 		emp.add(new Employee(103,"Mandar",55000));
 		emp.add(new Employee(104,"Amar",42000));
+		Employee e1=new Employee();
+		
 		
 		Iterator<Employee> itr=emp.iterator();
 		while(itr.hasNext()) {
@@ -94,9 +96,17 @@ public class EmployeeArrayList {
 		emp2.trimToSize();
 		System.out.println(al.size());
 		
+		for(int i=0;i<emp2.size();i++) {
+			System.out.println(emp.get(i));
+		}
 		
 		
-		
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+
+		return super.clone();
 	}
 
 }

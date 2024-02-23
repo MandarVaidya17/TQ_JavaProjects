@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class ArrayListDemo3 {
 	public static void main(String[] args) {
@@ -41,13 +42,17 @@ public class ArrayListDemo3 {
 		
 //18.	WAP to add 1 to 50 numbers in ArrayList and print only even numbers (using iterator)
 			
-		ArrayList<Integer> num=new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7));
-		for(Integer i:num) {
+		ArrayList<Integer> num=new ArrayList<Integer>();
+		for(int i=0;i<=50;i++) {
+			num.add(i);
+		}
+		Iterator<Integer> itr=num.iterator();
+		while(itr.hasNext()) {
+			Integer i=itr.next();
 			if(i%2==0) {
 				System.out.println(i);
 			}
 		}
-		
 //21.	WAP to convert collection into array
 		
 		String s1[]=new String[str.size()];
