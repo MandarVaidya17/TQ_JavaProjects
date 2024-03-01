@@ -1,6 +1,7 @@
 package com.mapdemo.hashmapdemo;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapDemo {
 	public static void main(String[] args) {
@@ -13,11 +14,17 @@ public class HashMapDemo {
 		smap.put("pradnya", 86.4);
 		smap.put("Rushikesh", 67.8);
 		smap.put("Amruta", 83.7);
-		smap.put(null, null);
+		//smap.put(null, null);
 		smap.put("Mandar", 87.8);
 		smap.put("Gunjan", 65.3);
 		
 		System.out.println(smap);
+		
+		for(Map.Entry<String , Double> e: smap.entrySet()) {
+			System.out.println(e.getKey()+" "+e.getValue());
+		}
+		
+		
 		
 		
 		
