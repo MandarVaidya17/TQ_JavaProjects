@@ -75,8 +75,8 @@ public class EmployeeDepartment {
 			System.out.println(e);
 		}
 		System.out.println("--------------------------------------------");
-		//mapDemo(emp);
-		showSalarydetails(emp);
+		mapDemo(emp);
+		//showSalarydetails(emp);
 		
 	}
 

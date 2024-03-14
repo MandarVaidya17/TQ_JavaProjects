@@ -3,16 +3,16 @@ package com.movieProject;
 public class MovieCharacter {
 	private int chracterId;
 	private String chracterName;
-	private String profile;
+	
 	public MovieCharacter() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public MovieCharacter(int chracterId, String chracterName, String profile) {
+	public MovieCharacter(int chracterId, String chracterName) {
 		super();
 		this.chracterId = chracterId;
 		this.chracterName = chracterName;
-		this.profile = profile;
+		
 	}
 	public int getChracterId() {
 		return chracterId;
@@ -26,16 +26,10 @@ public class MovieCharacter {
 	public void setChracterName(String chracterName) {
 		this.chracterName = chracterName;
 	}
-	public String getProfile() {
-		return profile;
-	}
-	public void setProfile(String profile) {
-		this.profile = profile;
-	}
+	
 	@Override
 	public String toString() {
-		return "MovieCharacter [chracterId=" + chracterId + ", chracterName=" + chracterName + ", profile=" + profile
-				+ "]";
+		return "MovieCharacter [chracterId=" + chracterId + ", chracterName=" + chracterName + "]";
 	}
 	
 	

@@ -1,5 +1,6 @@
 package com.movieProject;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class TestDemo implements MovieInfo {
 	
 	static Scanner sc=new Scanner(System.in);
-	List<Movie> movieList;
+	List<Movie> movieList=new ArrayList<Movie>();
 
 
 
@@ -25,9 +26,9 @@ public class TestDemo implements MovieInfo {
         int characterId = sc.nextInt();
         System.out.print("Character Name: ");
         String characterName = sc.next();
-        System.out.print("Character Profile: ");
-        String profile = sc.next();
-        MovieCharacter c = new MovieCharacter(characterId, characterName, profile);
+//        System.out.print("Character Profile: ");
+//        String profile = sc.next();
+        MovieCharacter c = new MovieCharacter(characterId, characterName);
         Movie movie = new Movie(movieId, movieName, movieId, c) ;
         movieList.add(movie);
         System.out.println("Movie added successfully.");
@@ -60,7 +61,7 @@ public class TestDemo implements MovieInfo {
 	            String characterName = sc.next();
 	            System.out.print("Character Profile: ");
 	            String profile = sc.next();
-	            MovieCharacter character = new MovieCharacter(characterId, characterName, profile);
+	            MovieCharacter character = new MovieCharacter(characterId, characterName);
 	            existingMovie.setC(character);
 	            System.out.println("Movie updated successfully.");
 	        } else {
@@ -113,6 +114,7 @@ public class TestDemo implements MovieInfo {
 
 	public static void main(String[] args) {
 		TestDemo t=new TestDemo();
+		
 		int choice;
 		do {
             System.out.println("\nMenu:");
